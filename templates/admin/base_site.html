@@ -1,0 +1,50 @@
+{% extends "admin/base.html" %}
+
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<style type="text/css">
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot?#') format('eot'),  /* IE6-8 */
+    url('../fonts/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/Yekan.ttf') format('truetype');  /* Saf3-5, Chrome4+, FF3.5, Opera 10+ */
+}
+*,
+body {
+    font-family: Yekan !important;
+}
+
+#user-tools {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#header
+{
+    background: #555555;
+}
+.module h2, .module caption, .inline-group h2
+{
+    background: #bbbbbb;
+
+}
+a.section:link, a.section:visited
+{
+    color: black !important;
+}
+
+</style>
+
+
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">Admin Panel</a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

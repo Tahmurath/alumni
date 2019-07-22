@@ -1,0 +1,16 @@
+{% extends "blog_base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+    {{ form.media }}
+  <form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="{% trans 'Submit' %}">
+  </form>
+<script type="text/javascript" src="{https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+{% endblock %}

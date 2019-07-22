@@ -1,0 +1,15 @@
+{% extends "blog_base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <h1>Student {{ student.person_id}}</h1>
+  {% if student %}
+  {{ student.person.first_name }}
+  {{ student.std_code }}
+  {{ student.start_date }}
+  {{ student.stop_date }}
+  {{ student.center }}
+  {% else %}
+    <p>{% trans 'There are no records.' %}</p>
+  {% endif %}       
+{% endblock %}

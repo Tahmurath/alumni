@@ -1,0 +1,96 @@
+{% extends "blog_base.html" %}
+{% load i18n %}
+
+
+
+{% block title %}
+    <title>{% trans 'Welcome to UAST Alumni Association' %}</title>
+{% endblock %}
+
+{% block jumbotron %}
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-8 px-0">
+            <h1 class="display-4 font-italic">{% trans 'homepage dark box title text' %}</h1>
+            <p class="lead my-3">{% trans 'homepage dark box body text' %}</p>
+            <p class="lead mb-0"><a class="btn btn-lg btn-primary" href="{% url 'newstdstart' %}"
+                                    role="button">{% trans 'Get Started' %}</a></p>
+
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    <h1>كانون دانش آموختگان</h1>
+    <p> كانون دانش آموختگان دانشگاه با هدف ايجاد و حفظ ارتباط مستمر بين دانش آموختگان با يكديگر و آشنائي و بهره گيري
+        موثرتر از امكانات و تجربيات علمي – فرهنگي اعضاء تشكيل شد . كانون دانش آموختگان تشكيلاتي است غير انتفاعي ، غير
+        سياسي و غير دولتي كه با حمايت مستقيم دانش آموختگان ، اساتيد و مدرسين دانشگاه جامع علمي كاربردي و ساير حاميان
+        تشكيل گرديده و براي گسترش ارتباطات اجتماعي و فرهنگي ميان دانش آموختگان دانشگاه جامع علمي كاربردي تلاش خواهد نمود
+        .
+
+        از جمله مهمترين اهداف اين كانون عبارتند از :
+
+        1- استفاده از استعداد ها ، توان ، تجربه و تخصص دانش آموختگان
+
+        2- ايجاد ارتباط علمي بين اعضاء و ايجاد زمينه ارتقاء علمي و تكميل دانش و تجربه تخصصي اعضاء
+
+        3- ايجاد كتابخانه ، سايت علمي ، برگزاري همايش هاي آموزشي ، صنفي ، فرهنگي و ...... از ديگر فعاليتهايي است اين
+        كانون مي تواند به آنها مبادرت نموده و از طريق آنها به ايجاد زمينه هاي رشد و بهره مندي اعضاء كمك نمايد .
+
+        4- ايجاد ارتباط و تعامل سازنده بين همكاران شاغل در عرصه هاي مختلف علمي و اجرايي كشور
+
+        5- حضور موثر اعضاء ( دانش آموختگان ) در عرصه هاي فرهنگي جامعه علي الخصوص جامعه دانشگاهي
+
+        6- ايجاد زمينه مناسب جهت توسعه ، تعميق و تعالي ارتباطات فرهنگي با ساير مراكز علمي و تحقيقاتي كشور
+
+        7- معرفی اعضا کانون جهت استفاده از تسهیلات مختلفی که از طریق دستگاهها و یا نهادهای مختلف در اختیار متقاضیان قرار
+        می گیرد.
+    </p>
+
+    <ul>
+        <li><strong>Students:</strong> {{ num_students }}</li>
+    </ul>
+{% endblock %}
+
+
+
+{% block sidebar %}
+    <aside class="col-md-4 blog-sidebar ">
+    {% block about %}
+        <div class="p-3 mb-3 about-box bg-light rounded shadow-sm">
+            <h4 class="font-italic">{% trans 'About' %}</h4>
+            <p class="mb-0">كانون دانش آموختگان دانشگاه با هدف ايجاد و حفظ ارتباط مستمر بين دانش آموختگان با يكديگر و
+                آشنائي و بهره گيري موثرتر از امكانات و تجربيات علمي – فرهنگي اعضاء تشكيل شد . كانون دانش آموختگان
+                تشكيلاتي است غير انتفاعي ، غير سياسي و غير دولتي كه با حمايت مستقيم دانش آموختگان ، اساتيد و مدرسين
+                دانشگاه جامع علمي كاربردي و ساير حاميان تشكيل گرديده و براي گسترش ارتباطات اجتماعي و فرهنگي ميان دانش
+                آموختگان دانشگاه جامع علمي كاربردي تلاش خواهد نمود </p>
+        </div>
+    {% endblock %}
+
+
+    {% block archives %}
+        <div class="p-3 mb-3 about-box bg-light rounded shadow-sm">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+                <li><a href="">March 2019</a></li>
+                <li><a href="#">February 2019</a></li>
+                <li><a href="#">January 2019</a></li>
+            </ol>
+        </div>
+    {% endblock %}
+
+    {% block links %}
+        <div class="p-3 mb-3 about-box bg-light rounded shadow-sm">
+            <h4 class="font-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+                <li><a href="https://www.uast.ac.ir/">UAST</a></li>
+                <li><a href="https://www.instagram.com/uast_ac_ir/">Instagram</a></li>
+                <li><a href="https://www.aparat.com/uast_ac_ir">Aparat</a></li>
+            </ol>
+        </div>
+    {% endblock %}
+
+
+    </aside>
+
+{% endblock %}

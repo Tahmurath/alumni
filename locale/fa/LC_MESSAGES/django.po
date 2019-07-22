@@ -1,0 +1,462 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-21 13:18+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\hamidreza\settings.py:193 .\home\views.py:105
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\hamidreza\settings.py:194 .\home\views.py:105
+msgid "Persian"
+msgstr "پارسی"
+
+#: .\home\templates\index.html:7
+msgid "Welcome to UAST Alumni Association"
+msgstr "انجمن دانش آموختگان"
+
+#: .\home\templates\index.html:13
+msgid "homepage dark box title text"
+msgstr "انجمن دانش آموختگان دانشگاه جامع علمی-کاربردی"
+
+#: .\home\templates\index.html:14
+msgid "homepage dark box body text"
+msgstr ""
+"درصورتی که شما دانش آموخته دانشگاه جامع علمی کاربردی هستید میتوانید ثبت نام "
+"کنید و از امکانات سامانه استفاده کنید"
+
+#: .\home\templates\index.html:16
+msgid "Get Started"
+msgstr "شروع کنید"
+
+#: .\home\templates\index.html:61 .\templates\blog_base.html:84
+msgid "About"
+msgstr "درباره"
+
+#: .\students\apps.py:6 .\students\models.py:61 .\templates\blog_base.html:87
+msgid "Students"
+msgstr "دانشجویان"
+
+#: .\students\models.py:9 .\students\models.py:64
+#: .\students\templates\students\student_list.html:25
+msgid "Center"
+msgstr "مرکز آموزشی"
+
+#: .\students\models.py:10 .\students\templates\new_student_start.html:31
+#: .\students\templates\new_student_verify.html:29
+msgid "Centers"
+msgstr "مرکز آموزشی"
+
+#: .\students\models.py:22 .\students\models.py:65
+msgid "Field"
+msgstr "رشته"
+
+#: .\students\models.py:23 .\students\templates\new_student_start.html:31
+msgid "Fields"
+msgstr "رشته"
+
+#: .\students\models.py:35
+msgid "Military"
+msgstr "وضعیت نظام وظیفه"
+
+#: .\students\models.py:36
+msgid "Military Types"
+msgstr "وضعیت نظام وظیفه"
+
+#: .\students\models.py:47 .\students\models.py:67
+msgid "Term"
+msgstr "ترم"
+
+#: .\students\models.py:48
+msgid "Terms"
+msgstr "ترم"
+
+#: .\students\models.py:60
+#: .\students\templates\students\student_confirm_delete.html:6
+msgid "Student"
+msgstr "دانشجو"
+
+#: .\students\models.py:63 .\users\models.py:76 .\users\models.py:145
+msgid "User"
+msgstr "کاربر"
+
+#: .\students\models.py:66 .\students\templates\students\student_list.html:28
+msgid "Student Code"
+msgstr "کد دانشجویی"
+
+#: .\students\models.py:68
+msgid "Military Status"
+msgstr "وضعیت نظام وظیفه"
+
+#: .\students\models.py:69
+msgid "Entry Date"
+msgstr "تاریخ ورود"
+
+#: .\students\models.py:70
+msgid "Graduate Date"
+msgstr "تاریخ دانش آموختگی"
+
+#: .\students\templates\new_student_start.html:16
+msgid "Search"
+msgstr "جستجو"
+
+#: .\students\templates\new_student_start.html:44 .\templates\blog_base.html:86
+msgid "Verify"
+msgstr "احراز"
+
+#: .\students\templates\new_student_start.html:50
+#: .\students\templates\students\student.html:13
+#: .\students\templates\students\student_list.html:49
+msgid "There are no records."
+msgstr "هیچ رکوردی موجود نیست"
+
+#: .\students\templates\new_student_verify.html:39
+msgid "student information to be verified:"
+msgstr "اطلاعات وارد شده جهت اعتبارسنجی از طریق سازمان ثبت احوال:"
+
+#: .\students\templates\new_student_verify.html:45
+msgid "Entry"
+msgstr "تاریخ ورود"
+
+#: .\students\templates\new_student_verify.html:46
+msgid "Verified"
+msgstr "احراز"
+
+#: .\students\templates\new_student_verify.html:94
+msgid "Continue"
+msgstr "ادامه"
+
+#: .\students\templates\new_student_verify.html:104
+msgid "verify correct student information"
+msgstr "جهت احراز هویت اطلاعات را به دقت و به درستی در فرم زیر ثبت نمایید."
+
+#: .\students\templates\new_student_verify.html:114
+#: .\students\templates\students\student_form.html:12
+msgid "Submit"
+msgstr "ارسال"
+
+#: .\students\templates\students\student_confirm_delete.html:6
+#: .\students\templates\students\student_confirm_delete.html:12
+#: .\students\templates\students\student_list.html:42
+msgid "Delete"
+msgstr "حذف"
+
+#: .\students\templates\students\student_confirm_delete.html:8
+msgid "Are you sure you want to delete the Student"
+msgstr "آیا مطمعن هستید از حذف کردن این دانشجو"
+
+#: .\students\templates\students\student_confirm_delete.html:8
+msgid "?"
+msgstr "؟"
+
+#: .\students\templates\students\student_list.html:14
+msgid "Students List"
+msgstr "لیست دانشجویان"
+
+#: .\students\templates\students\student_list.html:15
+msgid "Create"
+msgstr "ایجاد"
+
+#: .\students\templates\students\student_list.html:23
+msgid "First Name"
+msgstr "نام"
+
+#: .\students\templates\students\student_list.html:24
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: .\students\templates\students\student_list.html:26 .\users\models.py:83
+#: .\users\models.py:143
+msgid "Melli Code"
+msgstr "کد ملی"
+
+#: .\students\templates\students\student_list.html:27 .\users\models.py:84
+msgid "Gender"
+msgstr "جنسیت"
+
+#: .\students\templates\students\student_list.html:43
+msgid "Edit"
+msgstr "ویرایش"
+
+#: .\templates\admin\base_site.html:5
+msgid "Django site admin"
+msgstr "پنل مدیریت"
+
+#: .\templates\blog_base.html:59
+msgid "Go"
+msgstr "برو"
+
+#: .\templates\blog_base.html:63
+msgid "Alumni Association"
+msgstr "انجمن دانش آموختگان"
+
+#: .\templates\blog_base.html:71
+msgid "Logout"
+msgstr "خروج"
+
+#: .\templates\blog_base.html:73 .\templates\registration\login.html:34
+msgid "Login"
+msgstr "ورود"
+
+#: .\templates\blog_base.html:85
+msgid "Help"
+msgstr "راهنما"
+
+#: .\templates\blog_base.html:88
+msgid "Home"
+msgstr "خانه"
+
+#: .\templates\blog_base.html:116
+msgid "previous"
+msgstr "قبلی"
+
+#: .\templates\blog_base.html:119
+msgid "Page"
+msgstr "صفحه"
+
+#: .\templates\blog_base.html:119
+msgid "of"
+msgstr "از"
+
+#: .\templates\blog_base.html:122
+msgid "next"
+msgstr "بعدی"
+
+#: .\templates\blog_base.html:152
+msgid "All rights reserved"
+msgstr "© کلیه حقوق متعلق به دانشگاه جامع علمی کاربردی می‌باشد."
+
+#: .\templates\blog_base.html:154
+msgid "Back to top"
+msgstr "برگشت به بالا"
+
+#: .\templates\registration\login.html:8
+msgid "Your username and password didn't match. Please try again."
+msgstr "نام کاربری یا کلمه عبور اشتباه است. دوباره تلاش کنید."
+
+#: .\templates\registration\login.html:13
+msgid ""
+"Your account doesn't have access to this page.login with another account?"
+msgstr ""
+"حساب کاربری شما اجازه دسترسی به صفحه درخواستی را ندارد. مایلید با حساب دیگری "
+"وارد شوید؟"
+
+#: .\templates\registration\login.html:15
+msgid "Please login to see this page."
+msgstr "برای مشاهده صفحه درخواستی بایستی به سیستم وارد شوید."
+
+#: .\templates\registration\login.html:39
+msgid "Lost password?"
+msgstr "فراموشی رمز عبور؟"
+
+#: .\users\apps.py:6 .\users\models.py:77
+msgid "Users"
+msgstr "کاربر"
+
+#: .\users\forms.py:42 .\users\models.py:86 .\users\models.py:142
+msgid "Birthday"
+msgstr "تاریخ تولد"
+
+#: .\users\models.py:9
+msgid "Location"
+msgstr "مکان"
+
+#: .\users\models.py:10
+msgid "Locations"
+msgstr "مکان ها"
+
+#: .\users\models.py:20 .\users\models.py:94
+msgid "Country"
+msgstr "کشور"
+
+#: .\users\models.py:21
+msgid "Countries"
+msgstr "کشورها"
+
+#: .\users\models.py:34
+msgid "Male"
+msgstr "مرد"
+
+#: .\users\models.py:35
+msgid "Female"
+msgstr "زن"
+
+#: .\users\models.py:36 .\users\models.py:45 .\users\models.py:53
+#: .\users\models.py:70
+msgid "Other"
+msgstr "دیگر"
+
+#: .\users\models.py:40
+msgid "Unmarried"
+msgstr "مجرد"
+
+#: .\users\models.py:41
+msgid "Married"
+msgstr "متاهل"
+
+#: .\users\models.py:42
+msgid "Divorced"
+msgstr "طلاق گرفته"
+
+#: .\users\models.py:43
+msgid "Widowed"
+msgstr "بیوه"
+
+#: .\users\models.py:44
+msgid "Separated"
+msgstr "جدا"
+
+#: .\users\models.py:49
+msgid "Healthy"
+msgstr "سالم"
+
+#: .\users\models.py:50
+msgid "Deaf"
+msgstr "ناشنوا"
+
+#: .\users\models.py:51
+msgid "Blind"
+msgstr "نابینا"
+
+#: .\users\models.py:52
+msgid "Disability Movement"
+msgstr "معلول حرکتی"
+
+#: .\users\models.py:57
+msgid "Farzand Shahid"
+msgstr "فرزند شهید"
+
+#: .\users\models.py:58
+msgid "Farzand Azadeh"
+msgstr "فرزند آزاده"
+
+#: .\users\models.py:59
+msgid "Farzand Janbaz"
+msgstr "فرزند جانباز"
+
+#: .\users\models.py:60
+msgid "Farzand Razmandeh"
+msgstr "فرزند رزمنده"
+
+#: .\users\models.py:61
+msgid "Farzand Javidasar"
+msgstr "فرزند جاوید الاثر"
+
+#: .\users\models.py:62
+msgid "Hamsar Shahid"
+msgstr "همسر شهید"
+
+#: .\users\models.py:63
+msgid "Hamsar Azadeh"
+msgstr "همسر آزاده"
+
+#: .\users\models.py:64
+msgid "Hamsar Janbaz"
+msgstr "همسر جانباز"
+
+#: .\users\models.py:65
+msgid "Hamsar Razmandeh"
+msgstr "همسر رزمنده"
+
+#: .\users\models.py:66
+msgid "Hamsar Javidasar"
+msgstr "همسر جاوید الاثر"
+
+#: .\users\models.py:67
+msgid "Janbaz"
+msgstr "جانباز"
+
+#: .\users\models.py:68
+msgid "Azadeh"
+msgstr "آزاده"
+
+#: .\users\models.py:69
+msgid "Razmandeh"
+msgstr "رزمنده"
+
+#: .\users\models.py:79 .\users\models.py:138
+msgid "first name"
+msgstr "نام"
+
+#: .\users\models.py:80 .\users\models.py:139
+msgid "last name"
+msgstr "نام خانوادگی"
+
+#: .\users\models.py:82 .\users\models.py:141
+msgid "Shenasname Code"
+msgstr "شماره شناسنامه"
+
+#: .\users\models.py:85 .\users\models.py:140
+msgid "Father Name"
+msgstr "نام پدر"
+
+#: .\users\models.py:87
+msgid "Email"
+msgstr "ایمیل"
+
+#: .\users\models.py:88
+msgid "Nation"
+msgstr "ملیت"
+
+#: .\users\models.py:96
+msgid "City"
+msgstr "شهر"
+
+#: .\users\models.py:99 .\users\models.py:144
+msgid "Mobile Number"
+msgstr "تلفن همراه"
+
+#: .\users\models.py:100
+msgid "Phone Number"
+msgstr "تلفن"
+
+#: .\users\models.py:101
+msgid "Postal Code"
+msgstr "کد پستی"
+
+#: .\users\models.py:102
+msgid "Address"
+msgstr "آدرس"
+
+#: .\users\models.py:103
+msgid "Sajad Person ID"
+msgstr "کد فرد در سامانه سجاد"
+
+#: .\users\models.py:105
+msgid "Isargar"
+msgstr "ایثارگری"
+
+#: .\users\models.py:106
+msgid "Marital Status"
+msgstr "وضعیت نظام وظیفه"
+
+#: .\users\models.py:108
+msgid "Physical Condition"
+msgstr "وضعیت جسمانی"
+
+#: .\users\models.py:110
+msgid "Number of Children"
+msgstr "تعداد فرزندان"
+
+#: .\users\models.py:135
+msgid "Sabteahval"
+msgstr "ثبت احوال"
+
+#: .\users\models.py:136
+msgid "Sabteahvals"
+msgstr "ثبت احوال"

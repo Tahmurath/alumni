@@ -1,0 +1,54 @@
+{% extends "blog_base.html" %}
+{% load i18n %}
+{% load getmd5 %}
+
+{% block content %}
+    {{ form.media }}
+  <form action="" method="post">
+  <div class="form-row">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+
+  </div>
+
+  <input type="submit" value="{% trans 'Search' %}" class="btn btn-primary mb-2">
+  </form>
+
+
+{% endblock %}
+
+
+{% block contentbottom %}
+{% if user_list %}
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">{{ form.first_name.label }}</th>
+                <th scope="col">{{ form.last_name.label }}</th>
+                <th scope="col">{{ form.person_gender.label }}</th>
+                <th scope="col">{% trans 'Centers' %} - {% trans 'Fields' %}</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in user_list %}
+                <tr>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.get_person_gender_display }}</td>
+                    <td>{% for student in user.student_set.all %}
+                        <p>( {{ student.center.center_title }} - {{ student.field.field_title }} ){% if forloop.last == False %}, {% endif %}</p>
+                    {% endfor %}</td>
+                    <td><a href="student/{{ user.id }}/newstdverify/{{ user.getUserHash }}"> {% trans 'Verify' %}</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>{% trans 'There are no records.' %}</p>
+    {% endif %}
+
+
+{% endblock %}

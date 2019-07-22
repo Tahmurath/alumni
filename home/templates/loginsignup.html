@@ -1,0 +1,124 @@
+{% extends "blog_base.html" %}
+
+
+
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block contenttop %}
+
+
+{{ LANGUAGE_CODE  }}
+{{ request.session.fghfghf  }}
+{{ loginForm.as_p  }}
+
+
+
+    <div class="site-login">
+        <div class="container">
+            <div class="row">
+
+
+                    <div class="col" style="border-left: solid 1px #cccccc; padding: 50px 100px 50px 30px">
+                        <h1>ورود</h1>
+                        <form id="login-form" action="/frontend/web/site/login" method="post" role="form">
+                            <input type="hidden" name="_csrf-frontend"
+                                   value="dnpkWkViMkIiQx4ALlJZdDwZDj0sGmcDDzlWLyQXHw0ROx4rcVQKMQ==">
+                            <div class="form-group field-loginform-username required">
+                                <label class="control-label" for="loginform-username">نام کاربری</label>
+                                <input type="text" id="loginform-username" class="form-control"
+                                       name="LoginForm[username]" aria-required="true">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group field-loginform-password required">
+                                <label class="control-label" for="loginform-password">رمز عبور</label>
+                                <input type="password" id="loginform-password" class="form-control"
+                                       name="LoginForm[password]" aria-required="true">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group field-loginform-rememberme">
+                                <div class="checkbox">
+                                    <label for="loginform-rememberme">
+                                        <input type="hidden" name="LoginForm[rememberMe]" value="0"><input
+                                            type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]"
+                                            value="1" checked>
+                                        ورود به سیستم به صورت ماندگار
+                                    </label>
+                                    <p class="help-block help-block-error"></p>
+
+                                </div>
+                            </div>
+                            <div class="form-group field-loginform-mod">
+
+                                <input type="hidden" id="loginform-mod" class="form-control" name="LoginForm[mod]"
+                                       value="default">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div style="color:#999;margin:1em 0">
+                                در صورتی که رمز عبور خود را فراموش کرده اید میتوانید <a
+                                    href="/frontend/web/site/request-password-reset">بازیابی کنید</a>.
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" name="login-button">ورود</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+
+
+                    <div class="col" style="padding: 50px 30px 50px 100px">
+                        <h1>ثبت نام</h1>
+                        <form id="form-signup" action="/frontend/web/site/signup" method="post" role="form">
+                            <input type="hidden" name="_csrf-frontend"
+                                   value="dnpkWkViMkIiQx4ALlJZdDwZDj0sGmcDDzlWLyQXHw0ROx4rcVQKMQ==">
+
+                            <div class="form-group field-signupform-email required">
+                                <label class="control-label" for="signupform-email">ایمیل</label>
+                                <input type="text" id="signupform-email" class="form-control" name="SignupForm[email]"
+                                       aria-required="true">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group field-signupform-password required">
+                                <label class="control-label" for="signupform-password">رمز عبور</label>
+                                <input type="password" id="signupform-password" class="form-control"
+                                       name="SignupForm[password]" aria-required="true">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group field-signupform-password_repeat required">
+                                <label class="control-label" for="signupform-password_repeat">تکرار رمز عبور</label>
+                                <input type="password" id="signupform-password_repeat" class="form-control"
+                                       name="SignupForm[password_repeat]" aria-required="true">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group field-signupform-mod">
+
+                                <input type="hidden" id="signupform-mod" class="form-control" name="SignupForm[mod]"
+                                       value="default">
+
+                                <p class="help-block help-block-error"></p>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" name="signup-button">ثبت نام</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

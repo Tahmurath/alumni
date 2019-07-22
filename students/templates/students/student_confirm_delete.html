@@ -1,0 +1,15 @@
+{% extends "blog_base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<h1>{%  trans 'Delete' %} {%  trans 'Student' %}</h1>
+
+<p>{%  trans 'Are you sure you want to delete the Student' %} : {{ student }} {% trans '?' %}</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="{%  trans 'Delete' %}">
+</form>
+
+{% endblock %}

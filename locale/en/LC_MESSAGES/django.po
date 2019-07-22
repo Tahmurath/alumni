@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:17+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\hamidreza\settings.py:161 .\home\views.py:25
+msgid "English"
+msgstr ""
+
+#: .\hamidreza\settings.py:162 .\home\views.py:25
+msgid "Persian"
+msgstr ""
+
+#: .\home\templates\index.html:7
+msgid "Welcome to UAST Alumni Association"
+msgstr ""
+
+#: .\home\templates\index.html:13
+msgid "homepage dark box title text"
+msgstr "Alumni Association of UAST"
+
+#: .\home\templates\index.html:14
+msgid "homepage dark box body text"
+msgstr ""
+"If you are UAST graduated student, you can signup and use all features of "
+"this web site"
+
+#: .\home\templates\index.html:15
+msgid "Get Started"
+msgstr ""
+
+#: .\students\models.py:33
+msgid "User"
+msgstr ""
+
+#: .\students\models.py:34
+msgid "Center"
+msgstr ""
+
+#: .\students\models.py:35
+msgid "Field"
+msgstr ""
+
+#: .\students\models.py:36
+msgid "Student Code"
+msgstr ""
+
+#: .\students\models.py:37
+msgid "Term"
+msgstr ""
+
+#: .\students\models.py:38
+msgid "Military Status"
+msgstr ""
+
+#: .\students\models.py:39
+msgid "Entry Date"
+msgstr ""
+
+#: .\students\models.py:40
+msgid "Graduate Date"
+msgstr ""
+
+#: .\students\templates\students\student_list.html:14
+msgid "Students List"
+msgstr ""
+
+#: .\students\templates\students\student_list.html:15
+msgid "Create"
+msgstr ""
+
+#: .\students\templates\students\student_list.html:21
+msgid "Edit"
+msgstr ""
+
+#: .\students\templates\students\student_list.html:22
+msgid "Delete"
+msgstr ""
+
+#: .\templates\blog_base.html:58
+msgid "Go"
+msgstr ""
+
+#: .\templates\blog_base.html:62
+msgid "Alumni Association"
+msgstr ""
+
+#: .\templates\blog_base.html:70
+msgid "Logout"
+msgstr ""
+
+#: .\templates\blog_base.html:72
+msgid "Login"
+msgstr ""
+
+#: .\templates\blog_base.html:85
+msgid "Students"
+msgstr ""
+
+#: .\templates\blog_base.html:86
+msgid "Home"
+msgstr ""
+
+#: .\templates\blog_base.html:113
+msgid "previous"
+msgstr ""
+
+#: .\templates\blog_base.html:116
+msgid "Page"
+msgstr ""
+
+#: .\templates\blog_base.html:116
+msgid "of"
+msgstr ""
+
+#: .\templates\blog_base.html:119
+msgid "next"
+msgstr ""
+
+#: .\templates\blog_base.html:146
+msgid "All rights reserved"
+msgstr "Copyright © University of Applied Science and Technology, All rights reserved."
+
+#: .\templates\blog_base.html:148
+msgid "Back to top"
+msgstr ""
