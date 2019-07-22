@@ -115,6 +115,7 @@ media
 
 # Backup files # 
 *.bak 
+*.zip
 
 # If you are using PyCharm # 
 .idea
