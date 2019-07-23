@@ -11,7 +11,7 @@ from .forms import StudentForm
 from django.http import HttpResponseRedirect
 from users.forms import NewStdForm
 from users.forms import NewStdVerifyForm
-from users.forms import Etelaate_fardi
+from users.forms import EtelaateFardi
 from users.models import User, Sabteahval
 # import hashlib
 from django.urls import reverse
@@ -156,16 +156,14 @@ def new_student_verify(request, primary_key, hashcode):
 
             form_verif.save()
 
-            return redirect('/students/student/'+str(primary_key)+'/newstdverify/'+user.getUserHash())
-            #return HttpResponseRedirect(reverse_lazy('students'))
+            return redirect('/students/student/' + str(primary_key) + '/newstdverify/' + user.getUserHash())
+            # return HttpResponseRedirect(reverse_lazy('students'))
             # sabteahval = Sabteahval()
         else:
             form_verif = NewStdVerifyForm(initial=request.POST)
     else:
         # form_verif = NewStdVerifyForm(instance=user)
         form_verif = NewStdVerifyForm()
-
-
 
     try:
         verif = Sabteahval.objects.get(person_id=primary_key)
@@ -180,13 +178,10 @@ def new_student_verify(request, primary_key, hashcode):
         if 13 >= mobile_num >= 10:
             form_verif.fields['mobile_number'].help_text = user.mobile_number[-11:-7] + "####" + user.mobile_number[-3:]
 
-
     if verif:
         verif.hided_phone = verif.mobile_number[-11:-7] + "####" + verif.mobile_number[-3:]
 
-
     verified = True
-
 
     context = {
         'form_view': form_view,
@@ -199,13 +194,24 @@ def new_student_verify(request, primary_key, hashcode):
     return render(request, 'new_student_verify.html', context)
 
 
-def new_student_continue(request,primary_key):
+def new_student_continue(request, primary_key):
     user = get_object_or_404(User, pk=primary_key)
 
     if request.method == 'POST':
-        form = Etelaate_fardi(request.POST)
+        # form = Etelaate_fardi(request.POST or None, instance=user)
+        form = EtelaateFardi(request.POST, instance=user)
+
+        if form.is_valid():
+            # user = form.save(commit=False)
+            if form.save():
+                return redirect('/students/list');
+
+        else:
+
+            form = EtelaateFardi(initial=request.POST)
+
     else:
-        form = Etelaate_fardi(instance=user)
+        form = EtelaateFardi(instance=user)
 
     context = {
         'form': form,

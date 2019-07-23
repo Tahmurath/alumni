@@ -18,8 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from . import views
-if settings.DEBUG:
-    import debug_toolbar
+# if settings.DEBUG:
+#     import debug_toolbar
+
+import debug_toolbar
+
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls import url
 #import home.anooz as anooz

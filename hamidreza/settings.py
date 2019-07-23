@@ -47,22 +47,24 @@ INSTALLED_APPS = [
 
     'dal',
     'dal_select2',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'debug_toolbar',
     'jalali_date',
     'home.apps.HomeConfig',
     'users.apps.UsersConfig',
     'students.apps.StudentsConfig',
-    #'debug_toolbar',
+
     # 'getattribute',
 ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'hamidreza.middleware.ForceDefaultLanguageMiddleware',
@@ -72,7 +74,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'hamidreza.urls'
@@ -105,10 +107,8 @@ TEMPLATES = [
     },
 ]
 
-
-
 JALALI_DATE_DEFAULTS = {
-   'Strftime': {
+    'Strftime': {
         'date': '%y/%m/%d',
         'datetime': '%H:%M:%S _ %y/%m/%d',
     },
@@ -133,9 +133,6 @@ JALALI_DATE_DEFAULTS = {
         }
     },
 }
-
-
-
 
 WSGI_APPLICATION = 'hamidreza.wsgi.application'
 

@@ -4,7 +4,9 @@ from .models import Student, Center
 from dal import autocomplete
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
-
+from users.models import User
+from jalali_date.fields import JalaliDateField, SplitJalaliDateTimeField
+from jalali_date.widgets import AdminJalaliDateWidget, AdminSplitJalaliDateTime
 
 class StudentForm(forms.ModelForm):
     # center_id = forms.ModelChoiceField(
@@ -29,3 +31,7 @@ class StudentForm(forms.ModelForm):
             'field': autocomplete.ModelSelect2(url='field-autocomplete'),
             # 'term': autocomplete.ModelSelect2(url='term-autocomplete'),
         }
+
+
+
+

@@ -51,6 +51,7 @@ class HelloWindow(QMainWindow):
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
+    app.setStyle('windowsvista')
     mainWin = HelloWindow()
     mainWin.show()
     sys.exit(app.exec_())

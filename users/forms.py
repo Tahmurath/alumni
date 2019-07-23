@@ -45,7 +45,7 @@ class NewStdVerifyForm(forms.ModelForm):
                                                           )
 
 
-class Etelaate_fardi(forms.ModelForm):
+class EtelaateFardi(forms.ModelForm):
     class Meta:
         model = NewUserModel
         fields = (
@@ -54,7 +54,7 @@ class Etelaate_fardi(forms.ModelForm):
             'physical_condition', 'number_of_children', 'avatar')
 
     def __init__(self, *args, **kwargs):
-        super(Etelaate_fardi, self).__init__(*args, **kwargs)
+        super(EtelaateFardi, self).__init__(*args, **kwargs)
         self.fields['person_born_date'] = JalaliDateField(label=_('Birthday'),  # date format is  "yyyy-mm-dd"
                                                           widget=AdminJalaliDateWidget
                                                           # optional, to use default datepicker
