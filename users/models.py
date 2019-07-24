@@ -109,7 +109,8 @@ class User(AbstractUser):
     physical_condition = models.CharField(_('Physical Condition'), choices=PHYSICAL_TYPE_CHOICES, max_length=500,
                                           blank=True, null=True)
     number_of_children = models.IntegerField(_('Number of Children'), blank=True, null=True)
-    avatar = models.ImageField(upload_to='static/avatars', default='/static/avatars/gender_2.gif')
+    avatar = models.ImageField( upload_to="user/%Y/%m/%d/")
+    # null=True, blank=True,
 
     def getUserHash(self):
         import hashlib

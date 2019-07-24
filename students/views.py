@@ -197,18 +197,23 @@ def new_student_verify(request, primary_key, hashcode):
 def new_student_continue(request, primary_key):
     user = get_object_or_404(User, pk=primary_key)
 
+    from django.conf import settings
+
+
+    # user.first_name = settings.MEDIA_ROOT
+
     if request.method == 'POST':
         # form = Etelaate_fardi(request.POST or None, instance=user)
-        form = EtelaateFardi(request.POST, instance=user)
+        form = EtelaateFardi(request.POST, request.FILES, instance=user)
 
         if form.is_valid():
             # user = form.save(commit=False)
             if form.save():
-                return redirect('/students/list');
+                return redirect('/');
 
         else:
 
-            form = EtelaateFardi(initial=request.POST)
+            form = EtelaateFardi(request.POST)
 
     else:
         form = EtelaateFardi(instance=user)
